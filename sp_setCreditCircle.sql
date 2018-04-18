@@ -1,6 +1,5 @@
 USE LEAP
 GO
-
 ALTER PROCEDURE [dbo].[sp_setCreditCircle] (
 	@udt_circulocredito udt_circulocredito READONLY
 	, @udt_circulocredito_home udt_circulocredito_domicilio READONLY
@@ -14,7 +13,8 @@ BEGIN
 	BEGIN TRY
 		BEGIN TRAN
 		INSERT INTO LEAP.dbo.tp_circuloCredito (
-			cc_nombre
+			cc_idPros
+			, cc_nombre
 			, cc_paterno
 			, cc_materno
 			, cc_birthdate

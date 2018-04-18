@@ -21,7 +21,7 @@ CREATE TABLE tp_circuloCredito (
 	, cc_credOld DATETIME NOT NULL CONSTRAINT const_cc_credOld DEFAULT ''
 	, cc_maAprobed DECIMAL(18,4) NOT NULL CONSTRAINT const_cc_maAprobed DEFAULT 0
 	, cc_querydate DATETIME NOT NULL CONSTRAINT const_cc_querydate DEFAULT ''
-	, cc_folioquery INT NOT NULL CONSTRAINT const_cc_folioquery DEFAULT 0
-	, cc_folioquerySic INT NOT NULL CONSTRAINT const_cc_folioquerySic DEFAULT 0
+	, cc_folioquery VARCHAR(100) NOT NULL CONSTRAINT const_cc_folioquery DEFAULT 0
+	, cc_folioquerySic VARCHAR(100) NOT NULL CONSTRAINT const_cc_folioquerySic DEFAULT 0
 	, cc_paymentMonth DECIMAL(18,4) NOT NULL CONSTRAINT const_cc_paymentMonth DEFAULT -1
 )
